@@ -125,10 +125,6 @@ INITIAL-TIME."
   (and (>= time start)
        (<= time end)))
 
-(defun universal-time-day-abbr1 (universal-time)
-  (declare (integer universal-time))
-  (nth (universal-time-day-of-week universal-time) *day-abbr1*))
-
 (defun universal-time-day-abbr3 (universal-time)
   (declare (integer universal-time))
   (nth (universal-time-day-of-week universal-time) *day-abbr3*))
